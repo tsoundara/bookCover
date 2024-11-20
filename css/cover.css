@@ -1,0 +1,103 @@
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 970px;
+    height: 1505px;
+    border: black 1px solid;
+    transform: translate(-50%, -50%);
+}
+
+.image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    border: black solid 5px;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes bigsmall1 {
+    0%, 100%  { width: 40px; height: 0px; }
+    25%  { width: 40px; height: 60px; }
+    50% { width: 40px; height: 113px; }  
+}
+
+@keyframes bigsmall2 {
+    0%, 100%  { width: 57px; height: 0px; }
+    25%  { width: 57px; height: 100px; }
+    50% { width: 57px; height: 180px; }
+    75% {width: 57px; height: 260px; }
+}
+
+@keyframes bigsmall3 {
+    0%, 100%  { width: 160px; height: 0px; }
+    25%  { width: 160px; height: 100px; }
+    50% { width: 160px; height: 200px; }
+    75% {width: 160px; height: 410px; }
+}
+
+
+.box1{
+    animation: bigsmall1 2s infinite linear;
+    position: absolute; 
+    top: 380px; 
+    left: 3px; 
+    background: #fbf8f3;
+    width: 0px;  
+    height: 0px; 
+}
+
+.box2{
+    animation: bigsmall2 3s infinite alternate;
+    position: absolute; 
+    top: 380px; 
+    left: 30px; 
+    background: #fbf8f3;
+    width: 0px; 
+    height: 0px; 
+}
+
+.box3{
+    animation: bigsmall3 4s infinite alternate-reverse;
+    position: absolute; 
+    top: 300px; 
+    left:85px; 
+    background: #fbf8f3;
+    width: 0px; 
+    height: 0px; 
+}
+
+.box4 { 
+    position: absolute; 
+    top: 650px; 
+    left: 330px; 
+    background: #fbf8f3;
+    width: 60px; 
+    height: 60px; 
+}
+
+@keyframes slide{
+    0%{top: 650px}
+    100%{top: 450px;}
+}
+
+.box4{
+   animation: slide 2s infinite alternate;
+}
+
+.boo{
+    position: absolute;
+    top: 550px;
+    left: 600px;
+    font-size: 65px;
+    opacity: 0;
+}
+
+
+.boo:hover{
+    background: white;
+    opacity: 1;
+}
